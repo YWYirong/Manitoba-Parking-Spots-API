@@ -14,11 +14,16 @@ describe endpoint
 
 #### Sample request
 
-`curl ...`
+`http://api.manitobaweather.com/forecast/2023-03-27`
 
 #### Sample response
 
-`json body`
+`{ "date":  "2023-03-27",
+   "temperature":  "-1°C",
+   "humidity":  "60%",  
+   "precipitation":  "0.0 mm",  
+   "wind_direction":  "NE",  
+   "wind_speed":  "10 km/h"  }`
 
 ### GET `/forecast/average`
 
@@ -30,8 +35,11 @@ describe parameters
 
 #### Sample request
 
-`curl ...`
+`https://api.manitobaweather.com/forecast/average?start=2023-03-20&end=2023-03-27&attribute=temperature`
 
 #### Sample response
 
-`json body`
+`{ "start_date":  "2023-03-20",  
+   "end_date":  "2023-03-27",  
+   "attribute":  "temperature",  
+   "average":  "0°C"  }`
