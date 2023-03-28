@@ -2,6 +2,7 @@
 
 ## Description
 This is a REST API that provides resources to help people in Manitoba with weather forecasts and plan their day to day events. 
+Users will also be allowed to allowed to get information about locations in the city, and the status of the location. They will be able to check whether the location is currently occupied or free to use depending on the time of the day.
 Users will be allowed to pick the city and the unit of temperature they are looking to learn more about.
 In addition, users will have the luxury of finding out the average temperature of the day and whether it is going to rain or snow. 
 
