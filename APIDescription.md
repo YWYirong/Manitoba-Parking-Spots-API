@@ -22,7 +22,7 @@ Retrieves the weather forecast and the busyness status for a specified date and 
 
 #### Sample request
 
-`http://api.manitobaweather.com/forecast/2023-03-27`
+`http://api.manitobaweather.com/forecast/2023-03-27?location=Winnipeg`
 
 #### Sample response
 
