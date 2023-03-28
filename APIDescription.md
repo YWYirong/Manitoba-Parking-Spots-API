@@ -10,7 +10,12 @@ Contains information about Winnipeg's weather forecast, including temperature, h
 ## Endpoints and parameters
 ### GET `/forecast/{date}`
 
-describe endpoint
+Retrieves the weather forecast for a specified date and location.
+
+**Parameters:**
+
+-   `{date}` (required): The date to retrieve the forecast for in `YYYY-MM-DD` format.
+-   `location` (required): The name of the city or town to retrieve weather forecast for.
 
 #### Sample request
 
@@ -27,12 +32,13 @@ describe endpoint
 
 ### GET `/forecast/average`
 
-(uses a query parameter to say which attribute we want the average of)
+Retrieves the average value of a specified weather attribute for a range of dates.
 
-describe endpoint
+**Parameters:**
 
-describe parameters
-
+-   `start_date` (required): The start date to retrieve the forecast for in `YYYY-MM-DD` format.
+-   `end_date` (required): The end date to retrieve the forecast for in `YYYY-MM-DD` format.
+-   attribute: The weather attribute for which to calculate the average (e.g., temperature, humidity, precipitation, wind_speed, wind_direction).
 #### Sample request
 
 `https://api.manitobaweather.com/forecast/average?start=2023-03-20&end=2023-03-27&attribute=temperature`
