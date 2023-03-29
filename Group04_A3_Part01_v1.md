@@ -54,14 +54,15 @@ Retrieves the average value of a specified weather attribute for a range of date
 
 #### Sample request
 
-`curl -X GET "https://api.manitobaweather.com/forecast/average?start=2023-03-20&end=2023-03-27&attribute=temperature"`
+`curl -X GET "https://api.manitobaweather.com/forecast/average?start=2023-03-20&end=2023-03-27&location=Winnipeg&attribute=temperature"`
 
 #### Sample response
 
 ```
 {
    "start_date":  "2023-03-20",  
-   "end_date":  "2023-03-27",  
+   "end_date":  "2023-03-27",
+   "location": "Winnipeg",
    "attribute":  "temperature",  
    "average":  "0°C"
 }
